@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NFC 資格查驗</title>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
 </head>
-
-<body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
-</body>
+<body><main>
+<p class="eyebrow">NFC 標籤查驗</p>
+<h1>確認您的資格</h1>
+<p>每個標籤共可成功感應 3 次，第 4 次起資格不符。次數由伺服器統一保存，跨手機共用。</p>
+<section aria-live="polite">
+<h2 id="result">等待標籤</h2>
+<p id="serial">請感應 NFC 標籤並開啟網址。</p>
+<p id="count"></p>
+<button id="confirm" type="button" hidden>確認本次感應</button>
+<p id="message"></p>
+</section>
+<p class="note">開啟或重新整理頁面不會計次。請按「確認本次感應」完成查驗；前三次顯示符合資格，第 4 次起不符合。</p>
+</main></body>
 </html>

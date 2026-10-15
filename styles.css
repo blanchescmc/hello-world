@@ -1,17 +1,14 @@
-* {
-  margin:0px;
-  padding:0px;
-}
-
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
-}
-
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-}
+* { box-sizing: border-box; }
+body { margin: 0; background: #f2f5fa; color: #192a40; font-family: system-ui, sans-serif; line-height: 1.7; }
+main { max-width: 600px; margin: 48px auto; padding: 24px; }
+h1 { font-size: 2rem; margin-top: 0; }
+.eyebrow { color: #546986; margin-bottom: 4px; }
+section { margin: 28px 0; padding: 24px; border: 1px solid #dce4ef; border-radius: 16px; background: white; }
+h2 { margin-top: 0; }
+.pass { color: #176b45; }
+.fail { color: #a72d37; }
+button { width: 100%; padding: 14px; background: #265dc2; color: white; border: 0; border-radius: 8px; font: inherit; cursor: pointer; }
+button:disabled { opacity: .6; }
+.note { font-size: .9rem; color: #53647a; }
+#serial { overflow-wrap: anywhere; }
+@media(max-width:480px) { main { margin: 12px auto; padding: 20px; } }
